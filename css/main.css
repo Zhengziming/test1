@@ -1,0 +1,267 @@
+/********
+ * Votre CSS
+ ********/
+
+/**********
+*Liste de polices:
+
+font-family: 'Major Mono Display', monospace;
+font-family: 'Playfair Display', serif;
+font-family: 'Yeseva One', cursive;
+font-family: 'Galada', cursive;
+***********************/
+
+html,
+body {
+    height: 100%;
+    margin: auto 0;
+    background-color: #E7E8EA;
+    font-family: 'Istok Web', sans-serif;
+    font-size: 95%;
+}
+
+main {
+    padding: 20px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #F8EEE2;
+}
+
+ul > li:hover {
+    border-bottom: 5px solid;
+    border-bottom-color: #C49242;
+}
+
+ul li > a {
+    font-family: 'Yeseva One', cursive;
+    color: #297373;
+
+}
+
+/* menu "points" */
+
+.pointsMenu > img {
+    width: 50%;
+    height: 50%;
+}
+
+h1 {
+    font-family: 'Yeseva One', cursive;
+}
+
+
+
+}
+
+.liste {
+    display: block;
+    border-top: 1px solid #ccc;
+    border-bottom: none;
+    /*background: #666;*/
+    /*color: #03a9f4;*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.liste > div {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    border-bottom: 1px solid #ccc;
+    /*background: #666;*/
+    cursor: pointer;
+    transition: color 200ms ease-in-out;
+    /*background-color: #003777;*/
+    background-color: #e85e30;
+    color: #FFFFFF;
+}
+
+.liste > div:hover {
+    color: #000000;
+    transition: color 200ms ease-in-out;
+
+}
+
+.bouteille {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.bouteille > div {
+    margin-bottom: 15px;
+}
+
+.description {
+    background-color: whitesmoke;
+    color: #297373;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+
+
+.options > button,
+.nouvelleBouteille > button,
+.modifierBouteille input[type='submit'] {
+    background-color: #297373;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+
+}
+
+.options > button:hover,
+.nouvelleBouteille > button:hover,
+.modifierBouteille input[type='submit']:hover {
+    color: #297373;
+    background-color: #C49242;
+}
+
+.saq a {
+
+    color: #C49242;
+
+}
+
+.saq a:hover {
+
+    color: #297373;
+
+}
+
+.ajouter,
+.modifier {
+    background-color: #F8EEE2;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+form input {
+    border-radius: 5px;
+}
+
+
+@media all and (max-width:640px) {
+    footer {
+        display: none;
+    }
+
+    ul li > a {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width:768px) {
+    .pointsMenu {
+        display: none;
+    }
+
+    nav img {
+        width: 10%;
+        height: 10%;
+    }
+
+}
+
+@media only screen and (min-width:909px) {
+    main {
+        margin: 0 auto;
+        width: 600px;
+    }
+
+
+    nav img {
+        width: 10%;
+        height: 10%;
+    }
+
+    .pointsMenu {
+        display: none;
+    }
+
+
+    .bouteille {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 30px;
+        width: 800px;
+
+    }
+
+    .img {
+        margin: 10px;
+    }
+
+    .description {
+        background-color: whitesmoke;
+        color: #297373;
+        font-weight: bold;
+        font-size: 1em;
+        padding: 15px;
+        border-radius: 10px;
+        margin-right: 15px;
+
+    }
+
+    .options > button,
+    .nouvelleBouteille > button {
+
+        border-radius: 10px;
+        padding: 5px;
+        width: 100px;
+        font-size: 1em;
+
+    }
+
+    .options {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+footer {
+    position: fixed;
+    ;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 3px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+footer p {
+    display: inline;
+    padding-right: 50px;
+    font-size: 10px;
+}
